@@ -56,7 +56,7 @@ footer{font-size:0.9rem}
 }
 
 /* Custom navbar and button styles for AROMANZA */
-.custom-navbar{background:var(--logo-brown); padding:0.6rem 1.2rem; min-height:150px}
+.custom-navbar{background:var(--logo-brown); padding:0.6rem 1.2rem; min-height:150px; position:fixed; top:0; left:0; right:0; z-index:1040}
 .custom-navbar .navbar-brand, .custom-navbar .nav-link{color: #fff !important}
 .navbar-brand{display:flex; align-items:center}
 .nav-logo{height:140px; display:inline-block; padding:6px; background:rgba(var(--logo-brown-rgb),0.12); border-radius:10px; box-shadow:0 4px 10px rgba(0,0,0,0.18); filter:brightness(1.03) contrast(1.02); mix-blend-mode: multiply}
@@ -131,7 +131,7 @@ footer{font-size:0.9rem}
 }
 
 /* Ensure top-level page content sits below the large navbar */
-.site-main{margin-top:140px}
+.site-main{padding-top:190px}
 
 /* Use a background-image container so the picture can cover the whole box */
 .contact-image-bg{width:100%; height:320px; background-size:cover; background-position:center; background-repeat:no-repeat; border-radius:0.5rem; box-shadow:0 6px 18px rgba(0,0,0,0.12); margin-top:1rem}
