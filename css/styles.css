@@ -4,6 +4,7 @@
   --accent-gold:#d4a017; /* gold */
   --logo-brown:#D8B98A; /* matched to logo background sample */
   --logo-brown-rgb: 191,161,118;
+  --nav-offset: 190px; /* height reserved for fixed navbar */
   --muted:#6c757d;
 }
 /* Fonts loaded from index.html (Nunito + Playfair Display) */
@@ -132,6 +133,12 @@ footer{font-size:0.9rem}
 
 /* Ensure top-level page content sits below the large navbar */
 .site-main{padding-top:190px}
+
+/* When navigating to an in-page anchor, offset the scroll so fixed navbar doesn't cover the target */
+section[id], [id]{
+  /* use the same offset as the navbar; add a little extra spacing */
+  scroll-margin-top: calc(var(--nav-offset) + 12px);
+}
 
 /* Use a background-image container so the picture can cover the whole box */
 .contact-image-bg{width:100%; height:320px; background-size:cover; background-position:center; background-repeat:no-repeat; border-radius:0.5rem; box-shadow:0 6px 18px rgba(0,0,0,0.12); margin-top:1rem}
