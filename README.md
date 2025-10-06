@@ -10,12 +10,4 @@ Incluye:
 - `assets/` - imágenes y recursos
 
 Cómo probarlo localmente
-
-1. Abrir `index.html` en el navegador (doble clic o con Live Server en VS Code).
-2. El formulario tiene envío simulado (alert) y validación HTML5 + Bootstrap.
-
-Siguientes pasos
-
-- Reemplazar imágenes en `assets/` por las del PDF (si corresponde).
-- Ajustar textos y secciones según las consignas del PDF.
-- Integrar envío real del formulario a un backend (opcional).
+- Abrir `index.html` en el navegador (doble clic o con Live Server en VS Code).
